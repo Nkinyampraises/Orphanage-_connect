@@ -1,0 +1,56 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: #f0f0f0;
+}
+.login-container {
+    background-color: #6a5acd; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-left: 10px; 
+    justify-content: flex-start;
+}
+.remember-me input[type="checkbox"] {
+    margin-right: 5px; 
+}
+.signup, .forgot-password {
+    display: block; 
+    margin-right: 10px; 
+    color: #5a5a5a;
+    text-decoration: none; 
+}
+
+.signup:hover, .forgot-password:hover {
+    text-decoration: underline; 
+}
+
+button {
+    background-color: #4caf50; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #45a049;
+}

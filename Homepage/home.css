@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+.navbar {
+    position: sticky;
+    width: 100%;
+    display: block;
+    padding: 0
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+}
+
+li {
+    width: 33%;
+    float: left; 
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111; 
+    color: blue
+}
+
+.title {
+    font-style: oblique;
+    font-size: 60px;
+}
+
+.container2 {
+    height: 100vh;
+}
+
+.row1 {
+    height: 50%;
+    /*width: 100%;*/
+    top: 0;
+    padding-top: 0.1px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(121, 87, 242);
+    background-image: url("../Images/orphansimage1.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.row1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7957f2d2;
+    opacity: 0.5;
+    /*background-color: rgba(121, 87, 242, 0.5);*/
+    /* Semi-transparent overlay */
+    z-index: 1;
+    /* Places overlay above the background */
+}
+.row2 {
+    height: 150px;
+    width: 100%;
+    /*top: 51.2%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightgray;
+    /*opacity: 0.5;
+    background-image: url("../Images/orphansimage2.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;*/
+}
+.row3 {
+    height: 227.7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    top: 76.2%;
+    background-color: #7957f2d2;
+}
+a {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none
+}

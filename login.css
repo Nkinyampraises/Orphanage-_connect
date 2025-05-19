@@ -1,11 +1,16 @@
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 100vh; /* Use 100vh to fill the viewport height */
     background-color: #f0f0f0;
+    background-image: url('image.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-blend-mode: darken;
+    margin: 0; /* Remove default margin */
 }
+
 .login-container {
     background-color: #6a5acd; 
     padding: 20px;
@@ -14,31 +19,41 @@ body {
     width: 350px;
     text-align: center;
 }
-input[type="text"], input[type="password"] {
-    width: 60%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-.remember-me {
+
+.form-group {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    margin-left: 10px; 
-    justify-content: flex-start;
 }
-.remember-me input[type="checkbox"] {
-    margin-right: 5px; 
+
+label {
+    width: 30%; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 10px; /* Space between label and input */
 }
-.signup, .forgot-password {
-    display: block; 
-    margin-right: 10px; 
+
+input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.signup {
+    margin-top: 10px; 
     color: #5a5a5a;
     text-decoration: none; 
 }
 
-.signup:hover, .forgot-password:hover {
+.signup:hover {
     text-decoration: underline; 
 }
 
@@ -51,6 +66,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
 button:hover {
     background-color: #45a049;
 }

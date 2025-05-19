@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css"> 
-    
 </head>
 <body>
 
 <div class="login-container">
     <h2>LOGIN PAGE</h2>
     <form action="#">
-        <label for="name">NAME:</label>
-        <input type="text" id="name" name="name" placeholder="full name" required><br></br>
+        <div class="form-group">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" placeholder="full name" required>
+        </div>
         
-        <label for="password">Password:</label>
-        <input type="password" id="Password" name="password" placeholder="pwd" required>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="pwd" required>
+        </div>
         
         <div class="remember-me">
             <input type="checkbox" id="remember" name="remember">
             <label for="remember">Remember me</label>
-            <a href="#" class="signup">SIGNUP?</a>
-            <a href="#" class="forgot-password">Forgot password?</a>
+            <a href="signup.html">Signup?</a> 
         </div>
-        
         <button type="submit">LOGIN</button>
     </form>
 </div>
